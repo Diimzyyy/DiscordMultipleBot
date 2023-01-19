@@ -34,7 +34,8 @@ while True:
     if response.status_code == 200:
         messages = response.json()
         if len(messages) == 0:
-            
+                        
+            break
         else:
             # Jeda 2 Detik Sebelum Menghapus Pesan
             time.sleep(2) 
