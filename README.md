@@ -1,6 +1,7 @@
 # BotDiscord
-<a href="https://ibb.co/D1xTzb9"><img src="https://i.ibb.co/7SwLjzn/304-FF6-E0-6598-4264-A8-FA-924289-BDA678.jpg" alt="304-FF6-E0-6598-4264-A8-FA-924289-BDA678" border="0"></a>
 
+<p style="font-size:14px" align="right">
+<a href="https://t.me/airdroproper" target="_blank">Join Telegram Airdrop Proper <img src="https://i.ibb.co/7SwLjzn/304-FF6-E0-6598-4264-A8-FA-924289-BDA678.jpg" alt="304-FF6-E0-6598-4264-A8-FA-924289-BDA678" border="0"></a>
 ## Tutorial Ambil Discord Token 
 - 1. Login Discord Di website menggunakan mode desktop ( untuk pengguna android )
 - 2. Paste Code ini 
