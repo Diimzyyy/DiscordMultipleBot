@@ -10,19 +10,26 @@ text = ['test1','test2','test3']
 # Isi Token
 token = ['NDI1MjY4MzE3NTI0MDY2MzA1.GNBDwf.P-jcjyQ0gNrfA0bp5-HOONYb3Hsl5qfOkIzC58','OTA5MDE2MjQ5NjQyNjgwMzUw.GUKYcc.W3znAcPnfo8P6CT7P43bnlJAke0_VPIWeYehS0']
 
+while True:
 
-While true : 
-channel_id = random.choice(channel)
+    # Pilih channel ID secara random
+    channel_id = random.choice(channel_ids)
 
-payload = {'content': random.choise(text)} 
+    payload = {
+        'content': random.choice(words)
+    }
 
-header = {'authorization': random.choise(token)}
 
-r = requests.post(f"https://discord.com/api/v9/channels/{channel_id}/messages", data=payload, headers=headers)
+    headers = {
+        'Authorization': random.choice(token)
+    }
+    
+
+    r = requests.post(f"https://discord.com/api/v9/channels/{channel_id}/messages", data=payload, headers=headers)
     print(Fore.WHITE + "Sent message: ")
-    print(Fore.RED + payload['content'])
-
-response = requests.get(f'https://discord.com/api/v9/channels/{channel_id}/messages', headers=headers)
+    print(Fore.YELLOW + payload['content'])
+    
+    response = requests.get(f'https://discord.com/api/v9/channels/{channel_id}/messages', headers=headers)
 
     if response.status_code == 200:
         messages = response.json()
@@ -32,6 +39,7 @@ response = requests.get(f'https://discord.com/api/v9/channels/{channel_id}/messa
         else:
             # Tambahkan jeda selama 20 detik sebelum menghapus pesan
             time.sleep(0) 
+
             # Hapus pesan terbaru di channel
             message_id = messages[0]['id']
             response = requests.delete(f'https://discord.com/api/v9/channels/{channel_id}/messages/{message_id}', headers=headers)
@@ -42,7 +50,7 @@ response = requests.get(f'https://discord.com/api/v9/channels/{channel_id}/messa
     else:
         print(f'Gagal mendapatkan pesan di channel: {response.status_code}')
 
-# Setingan Delay Kirim Pesan Berikutnya
-for i in range(30): # Silahkan Ganti Angka 30 Dengan Angka yang kamu ingingkan
-        print(Fore.WHITE + f"Menunggu {30-i} Detik Untuk Pesan Selanjutnya ", end='\r')
+            # Angka 30 adalah countdown untuk next text sesuaikan dengan keinginan kalian
+    for i in range(30): 
+        print(Fore.WHITE + f"Sabar ya ganteng {30-i}", end='\r')
         time.sleep(1) 
