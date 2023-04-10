@@ -36,5 +36,4 @@ python bot.py
 ```
 
 
-## Note 
-- 1. DYOR
+## Source : https://github.com/bangpateng/push-dc
