@@ -35,5 +35,6 @@ nano bot.py
 python bot.py
 ```
 
+## Termux Version : https://github.com/Diimzyyy/BotDiscord-Termux
 
 ## Source : https://github.com/bangpateng/push-dc
